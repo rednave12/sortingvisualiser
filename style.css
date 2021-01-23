@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+	background-color: #FFBF00;
+}
+
+p {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	font-size: 1vw;
+	margin: auto;
+}	
+
+.root {
+	font-family: sans-serif;
+}	
+
+#myCanvas {
+	top: 10%;
+	margin: 0;
+	position: absolute;
+	z-index: 0;
+}	
+
+#toolbar {
+	background-color: #6495ED;
+	height: 10%;
+	position: absolute;
+}	
+
+.container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	height: 10%;
+	position: absolute;
+	justify-content: center;
+}	
+
+.child {
+	outline: none;
+	width: 15%;
+	height: 100%;
+	cursor: allowed;
+	opacity: 100%;
+	background-color: #45B39D;
+	color: #FFBF00;
+}
+
+.child2 {
+	outline: none;
+	width: 15%;
+	height: 100%;
+	color: white;
+}
+
+button {
+	border-radius: 4px;
+	background-color: #45B39D;
+	margin-left: 3px;
+	margin-right: 3px;
+}	
+
+.child:hover, .child2:hover {
+	background-color: #7DCEA0;
+}	
+
+.slider {
+	left: 30px;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px !important;
+}
+
+.slidercontainer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	background-color: #DC7633;
+	width: 100%;
+	height: 15%;
+	opacity: 60%;
+	color: white;
+	justify-content: left;
+}	
+
+.child2:focus {     
+    background-color: #DC7633;    
+}
+
+.disabled {
+	cursor: not-allowed;
+	opacity: 75%;
+	background-color: #DC7633;
+	outline: none;
+	width: 15%;
+	height: 100%;
+	color: white;
+}
+
+#byline {
+	margin-top: 20px !important;
+	position: relative;
+	font-size: 1.25vw !important;
+}	
+
+#Name {
+	margin-left: auto;
+	margin-right: 30px;
+	margin-top: 17.5px;
+}	

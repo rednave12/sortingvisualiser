@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Sorting Visualiser</title>
+	<meta name="description" content="Sorting Algorithm Visualiser">
+	<meta name="author" content="Evander Turner">
+	<meta name="date" content="2020">
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+	<canvas id="myCanvas"></canvas>
+	
+	<div class="container" id="toolbar">
+		<button class="disabled" id="go" onclick="sort(selected); changeClass('go', 'disabled');"><p>Go</p></button>
+		<button class="child2" id="quicksort" onclick="selected = quickSort; changeClass('go', 'child');"><p>Quick Sort</p></button>
+		<button class="child2" id="mergesort" onclick="selected = mergeSort; changeClass('go', 'child');"><p>Merge Sort COMING SOON</p></button>
+		<button class="child2" id="bubblesort" onclick="selected = bubbleSort; changeClass('go', 'child');"><p>Bubble Sort</p></button>
+		<button class="child2" id="insertionsort" onclick="selected = insertionSort; changeClass('go', 'child');"><p>Insertion Sort COMING SOON</p></button>
+		<button class="child" id="generatenew" onclick="generateArray(); changeClass('go', 'disabled'); selected = 0;"><p><em>Generate New Array</em></p></button>
+	</div>
+	
+	<div class="slidercontainer" id="options">
+		<div class="slider" id="sizeSlider">
+			<p>Array Size</p>
+			<input type="range" name="size" id="sizeSliderval" min="1" max="60">
+		</div>
+		<div class="slider" id="speedSlider">
+			<p>Sorting Speed</p>
+			<input type="range" name="speed" id="speedSliderval" min="0" max="300">
+		</div>
+		<div id="Name">
+			<p id="byline">Evander Turner 2020</p>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
